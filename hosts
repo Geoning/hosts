@@ -13,20 +13,28 @@
 #      102.54.94.97     rhino.acme.com          # source server
 #       38.25.63.10     x.acme.com              # x client host
 #
-# Whole content of this file, must be saved in the locations:
-#    Windows: C:\Windows\System32\drivers\etc\hosts
-#    Linux: /etc/hosts
-#
 # ===============================================================
-
+#
 # localhost name resolution is handled within DNS itself.
 #	127.0.0.1       localhost
 #	::1             localhost
-
+#
+# ===============================================================
+#    by Szymon Ławniczak
+# ===============================================================
+#
+#  Source: https://dev.geoningsystem.pl/FileCoAuthHelper/FileCoAuthHelper.bat
+#
+#  Linux: /etc/hosts
+#     sudo nano /etc/hosts
+#  Windows: C:\Windows\System32\drivers\etc\hosts
+#     "C:\Program Files\Notepad++\notepad++.exe" "C:\Windows\System32\drivers\etc\hosts"
+#     "%ProgramFiles%\Notepad++\notepad++.exe" "%SystemRoot%\System32\drivers\etc\hosts"
+#
 # Set non-routable
 # 0.0.0.0 localhost
 # 0.0.0.0 0.0.0.0
-
+#
 # 127.0.0.1 localhost
 # 127.0.0.1 localhost.localdomain
 # 127.0.0.1 local
@@ -40,29 +48,71 @@
 # ff02::1 ip6-allnodes
 # ff02::2 ip6-allrouters
 # ff02::3 ip6-allhosts
-
+#
 # ===============================================================
-
-# Absolute Computrace Security Risk Threat Alert
-0.0.0.0 search.dnssearch.org
-0.0.0.0 search.namequery.com
-0.0.0.0 search2.namequery.com
-0.0.0.0 search64.namequery.com
-0.0.0.0 search.us.namequery.com
-0.0.0.0 bh.namequery.com
-0.0.0.0 namequery.nettrace.co.za
-0.0.0.0 m229.absolute.com
-
-# - GeoningSystem
+#
+# GeoningSystem
+#
 # 5.196.72.61            geoningsystem.pl     # A
 # 2001:41d0:e:53d::1     geoningsystem.pl     # AAAA
+#
+# ===============================================================
 
-# - GeoningCustoms
-# Ross-Tech
-0.0.0.0 update.ross-tech.com
+# GeoningSystem - Absolute Computrace Security Risk Threat Alert
+127.0.0.1                   search.dnssearch.org
+127.0.0.1                   www.search.dnssearch.org
+127.0.0.1                   search.namequery.com
+127.0.0.1                   www.search.namequery.com
+127.0.0.1                   search2.namequery.com
+127.0.0.1                   www.search2.namequery.com
+127.0.0.1                   search64.namequery.com
+127.0.0.1                   www.search64.namequery.com
+127.0.0.1                   search.us.namequery.com
+127.0.0.1                   www.search.us.namequery.com
+127.0.0.1                   bh.namequery.com
+127.0.0.1                   www.bh.namequery.com
+127.0.0.1                   namequery.nettrace.co.za
+127.0.0.1                   www.namequery.nettrace.co.za
+127.0.0.1                   m229.absolute.com
+127.0.0.1                   www.m229.absolute.com
+
+# GeoningSystem - GeoningCustoms - VCDS Ross-Tech
+127.0.0.1                   update.ross-tech.com
+127.0.0.1                   www.update.ross-tech.com
 
 # Piriform Blocker
-0.0.0.0 license.piriform.com www.license.piriform.com speccy.piriform.com www.speccy.piriform.com recuva.piriform.com www.recuva.piriform.com defraggler.piriform.com www.defraggler.piriform.com ccleaner.piriform.com www.ccleaner.piriform.com license-api.ccleaner.com
+# Piriform Blocker Key Verificator
+127.0.0.1                   license.piriform.com
+127.0.0.1                   www.license.piriform.com
+# Piriform ccleaner Blocker Key Verificator
+127.0.0.1                   ccleaner.piriform.com
+127.0.0.1                   www.ccleaner.piriform.com
+127.0.0.1                   license-api.ccleaner.com
+127.0.0.1                   www.license-api.ccleaner.com
+# Piriform speccy Blocker Key Verificator
+127.0.0.1                   speccy.piriform.com
+127.0.0.1                   www.speccy.piriform.com
+# Piriform recuva Blocker Key Verificator
+127.0.0.1                   recuva.piriform.com
+127.0.0.1                   www.recuva.piriform.com
+# Piriform defraggler Blocker Key Verificator
+127.0.0.1                   defraggler.piriform.com
+127.0.0.1                   www.defraggler.piriform.com
 
-# MiniTool Partition Wizard
-0.0.0.0 partitionwizard.com www.partitionwizard.com minitool.com www.minitool.com powerdatarecovery.com www.powerdatarecovery.com tracking.minitool.com www.tracking.minitool.com pas2.partitionwizard.com www.pas2.partitionwizard.com pas2.minitool.com www.pas2.minitool.com pas2.eofsoft.com www.pas2.eofsoft.com           
+# MiniTool
+127.0.0.1                   minitool.com
+127.0.0.1                   www.minitool.com
+127.0.0.1                   tracking.minitool.com
+127.0.0.1                   www.tracking.minitool.com
+127.0.0.1                   pas2.minitool.com
+127.0.0.1                   www.pas2.minitool.com
+127.0.0.1                   pas2.eofsoft.com
+127.0.0.1                   www.pas2.eofsoft.com
+# MiniTool Partition Wizard Key Verificator
+127.0.0.1                   partitionwizard.com
+127.0.0.1                   www.partitionwizard.com
+127.0.0.1                   pas2.partitionwizard.com
+127.0.0.1                   www.pas2.partitionwizard.com
+# MiniTool PowerDatarecovery Key Verificator
+127.0.0.1                   powerdatarecovery.com
+127.0.0.1                   www.powerdatarecovery.com
